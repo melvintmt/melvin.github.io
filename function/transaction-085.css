@@ -1,0 +1,118 @@
+/* ====== TRANSACTION SECTION COFFEE THEME (DARK BROWN) ====== */
+.transaction-section {
+  max-width: 900px;
+  margin: 56px auto 0 auto;
+  background: #6b4f27;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(107,79,39,0.10);
+  padding: 36px 28px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.transaction-section h2 {
+  color: #fff;
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.transaction-form {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+  align-items: flex-end;
+}
+.transaction-form > div {
+  flex: 1 1 180px;
+  display: flex;
+  flex-direction: column;
+}
+.transaction-form label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #fff;
+}
+.transaction-form input,
+.transaction-form select {
+  padding: 7px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  font-size: 1rem;
+  background: #fff;
+  color: #6b4f27;
+}
+.transaction-form button {
+  background: #ffab91;
+  color: #6b4f27;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(107,79,39,0.10);
+  transition: background 0.2s;
+}
+.transaction-form button:hover {
+  background: #ff8a65;
+  color: #fff;
+}
+.filter-bar {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 18px;
+  align-items: flex-end;
+}
+.filter-bar label {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.filter-bar select,
+.filter-bar input {
+  padding: 7px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  font-size: 1rem;
+  background: #fff;
+  color: #6b4f27;
+}
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  background: #fff;
+  color: #6b4f27;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(107,79,39,0.08);
+}
+.transaction-table th, .transaction-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #e0cfa6;
+  text-align: center;
+}
+.transaction-table th {
+  background: #ffab91;
+  color: #6b4f27;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.transaction-table tr:hover {
+  background: #f5e9da;
+  transition: background 0.2s;
+}
+.btn-hapus {
+  background: #e57373;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(107,79,39,0.10);
+  transition: background 0.2s;
+}
+.btn-hapus:hover {
+  background: #b71c1c;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Melvin Coffee - Transaction</title>
+  <link rel="icon" type="image/png" href="img/header-coffe.png">
+  <link rel="stylesheet" href="function/style-085.css"/>
+  <link rel="stylesheet" href="function/transaction-085.css"/>
+</head>
+
+<body class="body">
+  
+  <header class="site-header">
+    <div class="container">
+      <a href="home-085.html" class="logo">
+        <img src="img/header-coffe.png" alt="Melvin Coffee Logo">
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="home-085.html">Home                              </a></li>
+          <li><a href="profile-085.html">Profile                        </a></li>
+          <li><a href="transaction-085.html" class="active">Transaction </a></li>
+          <li><a href="login-085.html">Login                            </a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="transaction-section">
+    <h2>Daftar Transaksi</h2>
+    <form class="transaction-form" onsubmit="tambahTransaksi(event)">
+      <div>
+        <label for="jenis">Jenis</label>
+        <select id="jenis" name="jenis" required onchange="updateHarga()">
+          <option value="">-- Pilih Jenis --</option>
+          <option value="Americano" data-harga="25000">Americano</option>
+          <option value="Latte" data-harga="30000">Latte</option>
+          <option value="Mochaccino" data-harga="35000">Mochaccino</option>
+        </select>
+      </div>
+      <div>
+        <label for="jumlah">Jumlah</label>
+        <input type="number" id="jumlah" name="jumlah" min="1" value="1" required>
+      </div>
+      <div>
+        <label for="harga">Harga</label>
+        <input type="text" id="harga" name="harga" required readonly>
+      </div>
+      <button type="submit">Tambah</button>
+    </form>
+    <div class="filter-bar">
+      <div>
+        <label for="filterJenis">Filter Jenis</label>
+        <select id="filterJenis" onchange="filterTable()">
+          <option value="">Semua</option>
+          <option value="Americano">Americano</option>
+          <option value="Latte">Latte</option>
+          <option value="Mochaccino">Mochaccino</option>
+        </select>
+      </div>
+      <div>
+        <label for="searchTransaksi">Cari Transaksi</label>
+        <input type="text" id="searchTransaksi" oninput="filterTable()" placeholder="Cari ID atau Jenis...">
+      </div>
+    </div>
+    <table class="transaction-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Tanggal</th>
+          <th>Jenis</th>
+          <th>Jumlah</th>
+          <th>Harga</th>
+          <th>Total Harga</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data transaksi akan muncul di sini melalui JavaScript -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="function/transaction-085.js"></script>
+</body>
+</html>

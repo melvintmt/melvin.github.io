@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Melvin Coffee - Login</title>
+  <link rel="icon" type="image/png" href="img/header-coffe.png">
+  <link rel="stylesheet" href="function/style-085.css"/>
+  <link rel="stylesheet" href="function/login-085.css"/>
+</head>
+
+<body class="body">
+  
+  <header class="site-header">
+    <div class="container">
+      <a href="home-085.html" class="logo">
+        <img src="img/header-coffe.png" alt="Melvin Coffee Logo">
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="home-085.html">Home                    </a></li>
+          <li><a href="profile-085.html">Profile              </a></li>
+          <li><a href="transaction-085.html">Transaction      </a></li>
+          <li><a href="login-085.html"  class="active">Login  </a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="bodys">
+    <div class="card">
+      <h2>Login Melvin Coffee</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="username">Username atau Email</label>
+          <input type="text" id="username" name="username" placeholder="Masukkan username atau email">
+          <div class="error" id="usernameError">Username/email tidak boleh kosong.</div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Masukkan password">
+          <div class="error" id="passwordError">Password tidak boleh kosong.</div>
+        </div>
+        
+        <div class="options">
+          <div class="remember">
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember me</label>
+          </div>
+          <a href="#" class="forgot-password">Forgot Password?</a>
+        </div>
+        
+        <button type="submit" class="btn">Login</button>
+        
+        <div class="signup">
+          Belum punya akun? <a href="#">Sign up sekarang</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="function/login-085.js"></script>
+</body>
+</html>
